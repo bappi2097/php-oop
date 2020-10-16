@@ -7,6 +7,11 @@ abstract class Car
         $this->name = $name;
     }
     abstract function getIntro(): string;
+
+    public function getName()
+    {
+        return $this->name;
+    }
 }
 
 class Volvo extends Car
@@ -18,8 +23,8 @@ class Volvo extends Car
 }
 
 $volvo = new volvo("volvo");
-echo $volvo->getIntro();
-
+echo $volvo->getIntro() . "</br>";
+echo $volvo->getName();
 ?>
 
 <!DOCTYPE html>
